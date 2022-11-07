@@ -15,9 +15,7 @@ def listado_Familiares(request):
     documento = plantilla.render(datos)
     return HttpResponse(documento)
 
-    #cadena_respuesta = " "
-    #for familiar in familia:
-        #cadena_respuesta += familiar.nombre + " " + str(familiar.edad) + " " + str(familiar.fecha_nacimiento) + " "
+
     
     
     
