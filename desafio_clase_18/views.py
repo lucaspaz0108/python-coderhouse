@@ -8,14 +8,18 @@ from desafio_clase_18.models import Familiares
 
 
     
-def ListadoFamiliares(request):
-    familia = Familiares.objects.all()
+def listado_Familiares(request):
+    listaFamiliares = Familiares.objects.all()
+    datos = {"listaFamiliares": listaFamiliares,}
+    plantilla = loader.get_template("Template.html")
+    documento = plantilla.render(datos)
+    return HttpResponse(documento)
 
-    cadena_respuesta = " "
-    for familiar in familia:
-        cadena_respuesta += familiar.nombre + " " + str(familiar.edad) + " " + str(familiar.fecha_nacimiento) + " "
+    #cadena_respuesta = " "
+    #for familiar in familia:
+        #cadena_respuesta += familiar.nombre + " " + str(familiar.edad) + " " + str(familiar.fecha_nacimiento) + " "
     
-    return HttpResponse(cadena_respuesta)
+    
     
 
 

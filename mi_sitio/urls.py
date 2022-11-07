@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from desafio_clase_18.models import Familiares
-from desafio_clase_18.views import ListadoFamiliares
+from desafio_clase_18.views import listado_Familiares
 from mi_sitio.views import anio_nacimiento, dia_hoy, vista_listado_alumnos, vista_plantilla, vista_saludo
 from appcoder.views import listado_cursos
 
@@ -28,5 +28,5 @@ urlpatterns = [
     path("inicio/", vista_plantilla),
     path("alumnos/", vista_listado_alumnos),
     path("cursos/", listado_cursos),
-    path("familia/", ListadoFamiliares)
+    path("familia/", listado_Familiares)
 ]

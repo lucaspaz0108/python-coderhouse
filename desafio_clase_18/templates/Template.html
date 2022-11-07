@@ -7,6 +7,14 @@
     <title>Familia</title>
 </head>
 <body>
-    
+    <h1>Listado familiares</h1>
+    {% for familiar in listaFamiliares %}
+    <ul>
+        <li>{{familiar.nombre}}
+            {{familiar.edad}}
+            {{familiar.fecha_nacimiento}}
+        </li>
+    </ul>
+    {% endfor %}
 </body>
 </html>

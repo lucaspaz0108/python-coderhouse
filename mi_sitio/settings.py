@@ -56,7 +56,7 @@ ROOT_URLCONF = 'mi_sitio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"C:\Users\Lucas\Desktop\coder\mi_sitio\mi_sitio\templates"],
+        'DIRS': [r"C:\Users\Lucas\Desktop\coder\mi_sitio\desafio_clase_18\templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
